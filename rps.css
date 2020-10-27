@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player div {
+    display: inline flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F1FAEE;
+    width: 40%;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #1D3557;
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.79);
+    color: #BFC0C0;
+}
+
+button {
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#human button:hover {
+    color: #F1FAEE;
+    background-color: #A8DADC;
+    transition: background-color 1s;
+}
+
+#human button {
+    margin: 10px auto;
+    width: 30%;
+}
+
+.reset button:hover {
+    color: #F1FAEE;
+    background-color: #457B9D;
+    transition: background-color 1s;
+}

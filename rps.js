@@ -1,9 +1,9 @@
-let game = document.querySelector('.game');
-let gameAction = document.createElement('div');
-let results = document.createElement('div');
-let rounds = document.createElement('h3');
-let gameResult = document.createElement('h3');
-let winner = document.createElement('h3');
+const game = document.querySelector('.game');
+const gameAction = document.createElement('div');
+const results = document.createElement('div');
+const rounds = document.createElement('h3');
+const gameResult = document.createElement('h3');
+const winner = document.createElement('h3');
 
 
 //generate random number to be used by computer
@@ -28,7 +28,6 @@ const paper = document.querySelector("#paper");
 const scissors = document.querySelector("#scissors");
 const reset = document.querySelector("#reset");
 const choices = [rock, paper, scissors];
-const computerSelection = computerPlay();
 
 let playerWins = 0;
 let computerWins = 0;
@@ -83,6 +82,7 @@ choices.forEach((button) => {
             rounds.innerText = '';
             gameResult.innerText = '';
         } else {
+            let computerSelection = computerPlay();
             rounds.innerText = '';
             gameAction.innerText = `You selected ${button.id}. The computer selected ${computerSelection}.`;
             results.innerText = playRound(button.id, computerSelection);
